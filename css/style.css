@@ -1,0 +1,100 @@
+body{
+    background-image: url("../img/bg-image-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+/* ...... */
+/* საერთო */
+.nav-div,
+.ul-nav,
+.main-section,
+.d-main .project-section,
+.d-main .project-section .one-section {
+    display: flex;
+}
+
+/* header */
+.nav-div{
+background-color:white ;
+align-items: center;
+}
+.li-nav{
+    margin-left: 90px;
+    padding-left: 15px;
+}
+.li-nav:hover{
+    text-align: center;
+    background-color: green;
+    width: 100px;
+    height: 40px;
+}
+.header-section{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10%;
+}
+.header-section .button-section{
+    margin-left: 40%;
+    text-align: center;
+    background-color: green;
+    width: 300px;
+    height: 50px;
+}
+.header-section .button-section:hover{
+    margin-left: 40%;
+    background-color: rgb(100, 14, 199);
+    width: 300px;
+    height: 50px;
+    
+}
+.header-section .button-section a{
+    color: white;
+}
+
+/* and of header */
+/* main */
+.main-section .col{
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 140px;
+    background-color: honeydew;
+    border-radius: 10px;
+    border: 1px solid green;
+    max-width: 350px;
+    max-height: 450;
+
+}
+
+.main-section .col p{
+    max-width: 250px;
+
+}
+
+.project-title{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 10%;
+}
+.project-section .one-section{
+    flex-wrap: wrap;
+}
+
+.d-main .project-section .one-section .col a:hover{
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #a4ea58c9, #81e18fcf);
+    transform: scale(0);
+}
+.project-section .col img{
+    max-width: 350px;
+    height: 350px;
+    /* object-fit: contain; */
+}
+.project-section .col p{
+    width: 200px;
+}
