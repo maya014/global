@@ -10,13 +10,14 @@ body{
 .nav-div,
 .ul-nav,
 .main-section,
-.d-main .project-section,
 .d-main .project-section .one-section {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* header */
 .nav-div{
+    /* position: fixed; */
 background-color:white ;
 align-items: center;
 }
@@ -55,16 +56,25 @@ align-items: center;
 
 /* and of header */
 /* main */
+.main-section{
+justify-content: space-around;
+}
 .main-section .col{
     text-align: center;
     margin-top: 20%;
-    margin-left: 140px;
+    /* margin-left: 10%; */
     background-color: honeydew;
     border-radius: 10px;
     border: 1px solid green;
     max-width: 350px;
     max-height: 450;
+    transition: all 0.3s ease;
 
+}
+.main-section .col:hover{
+    background-color: rgb(159, 214, 159);
+    box-sizing: inherit;
+    transition: all 0.3s ease;
 }
 
 .main-section .col p{
@@ -79,9 +89,9 @@ align-items: center;
 }
 .project-section .one-section{
     flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-.d-main .project-section .one-section .col a:hover{
+.d-main .project-section .one-section .col :hover{
     transition: all 0.3s ease;
     width: 100%;
     height: 100%;
@@ -91,10 +101,10 @@ align-items: center;
     transform: scale(0);
 }
 .project-section .col img{
-    max-width: 350px;
+    max-width: 400px;
     height: 350px;
     /* object-fit: contain; */
 }
 .project-section .col p{
-    width: 200px;
+    width: 350px;
 }
