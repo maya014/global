@@ -22,8 +22,8 @@ background-color:white ;
 align-items: center;
 }
 .li-nav{
-    margin-left: 60px;
-    padding-left: 15px;
+    margin-left: 50px;
+    padding-left: 10px;
 }
 .li-nav:hover{
     text-align: center;
