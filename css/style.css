@@ -202,11 +202,11 @@ background-position: center;
 background-repeat: no-repeat;
 height: 700px;
 height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 10px;
-/* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
 
 }
 .body-section .container{
@@ -317,7 +317,10 @@ padding: 10px;
     /* transform: scale(0.99); */
     background: linear-gradient(-135deg, #1d221d, #67fc04);
     }
-   
+   @media(max-width: 584px){
+   .container{
+    max-width: 100%;
+  }
   form .user-details .input-box{
       margin-bottom: 15px;
       width: 100%;
