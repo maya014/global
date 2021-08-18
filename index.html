@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/reste.css">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>global_world</title>
 </head>
 <body>
@@ -83,51 +84,121 @@
 				<div class="one-section">
 					<div class="col">
 						<a href="#"><img src="img/03.jpg" alt=".. "></a>
-						<p>გლობალური დათბობის წინააღმდეგ</p>
-						<p>King Center Africa</p>
+						<p class="one-col">გლობალური დათბობის წინააღმდეგ</p>
+						
 					</div>
 					<div class="col">
 						<a href="#"><img src="img/04.jpg" alt=".."></a>
-						<p>ახალი თაობა</p>
-						<p>King Center Africa</p>
+						<p class="one-col">ახალი თაობა</p>
+						
 					</div>
 					<div class="col">
 						<a href="#"><img src="img/05.jpg" alt=".."></a>
-						<p>ბავშობიდან სიყვარულის ჩანერგვა</p>
-						<p>King Center Africa</p>
+						<p class="one-col">ბავშობიდან სიყვარულის ჩანერგვა</p>
+						
 					</div>
 				</div>        
 				<div class="one-section">
 					<div class="col">
 						<a href="#"><img src="img/06.jpg" alt=".."></a>
-						<p>შეინახეთ ოზონის ფენა</p>
-						<p>King Center Africa</p>
+						<p class="one-col">შეინახეთ ოზონის ფენა</p>
+						
 					</div>
 					<div class="col">
 						<a href="#"><img src="img/07.jpg" alt=".."></a>
-						<p>გახადეთ მცენარეები ცოცხალი</p>
-						<p>King Center Africa</p>
+						<p class="one-col">გახადეთ მცენარეები ცოცხალი</p>
+						
 					</div>
 					<div class="col">
 						<a href="#"><img src="img/08.jpg" alt=".."></a>
-						<p>დაზოგეთ წყალი დაბინძურებისგან </p>
-						<p>King Center Africa</p>
+						<p class="one-col">დაიცავით წყალი დაბინძურებისგან </p>
+						
 					</div>
 				</div>
 			</section>
            <!-- project-section off -->
 
-		   <section class="person">
-
-			   
+		   <section class="person-section" >
+			   <div>
+				   <h1 class="person-section-title">მოხალისეები</h1>
+				   <p class="person-section-title">შემოუერთდით ჩვენს დიდ ოჯახს!!!!</p>
+			   </div>
+			<div id="api">
+				<ul id="list" class="ul-users">
+				</ul>   
+			</div>
+			<div class="button-person">
+				<button id="previous"> წინ</button>
+				<button id="next"> შემდეგი</button>
+		    </div>
 		   </section>
-
+		   <section class="body-section">
+			<div class="container">
+				<div class="title">Registration</div>
+				<div class="content">
+				  <form action="#">
+					<div class="user-details">
+					  <div class="input-box">
+						<span class="details">Full Name</span>
+						<input type="text" placeholder="Enter your name" required>
+					  </div>
+					  <div class="input-box">
+						<span class="details">Username</span>
+						<input type="text" placeholder="Enter your username" required>
+					  </div>
+					  <div class="input-box">
+						<span class="details">Email</span>
+						<input type="text" placeholder="Enter your email" required>
+					  </div>
+					  <div class="input-box">
+						<span class="details">Phone Number</span>
+						<input type="text" placeholder="Enter your number" required>
+					  </div>
+					  <div class="input-box">
+						<span class="details">Password</span>
+						<input type="text" placeholder="Enter your password" required>
+					  </div>
+					  <div class="input-box">
+						<span class="details">Confirm Password</span>
+						<input type="text" placeholder="Confirm your password" required>
+					  </div>
+					</div>
+					<div class="gender-details">
+					  <input type="radio" name="gender" id="dot-1">
+					  <input type="radio" name="gender" id="dot-2">
+					  <input type="radio" name="gender" id="dot-3">
+					  <span class="gender-title">Gender</span>
+					  <div class="category">
+						<label for="dot-1">
+						<span class="dot one"></span>
+						<span class="gender">Male</span>
+					  </label>
+					  <label for="dot-2">
+						<span class="dot two"></span>
+						<span class="gender">Female</span>
+					  </label>
+					  <label for="dot-3">
+						<span class="dot three"></span>
+						<span class="gender">Prefer not to say</span>
+						</label>
+					  </div>
+					</div>
+					<div class="button">
+					  <input type="submit" value="Register">
+					</div>
+				  </form>
+				</div>
+			  </div>
+			
+		   </section>
     </main>
     <!-- main -->
-    <footer>
+    <footer class="d-footer">
+<section class="footer-block1">
 
+</section>
     </footer>
     <!-- footer -->
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
