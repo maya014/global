@@ -10,7 +10,11 @@ body{
 .nav-div,
 .ul-nav,
 .main-section,
-.d-main .project-section .one-section {
+.d-main .project-section .one-section,
+.container .title,
+.footer-content,
+.animacia .green,
+.animacia .girls {
     display: flex;
     flex-wrap: wrap;
 }
@@ -36,24 +40,79 @@ align-items: center;
     width: 100px;
     height: 40px;
 }
+/* .... */
+/* animacia */
+.boy{
+  transition: all 7s ease-in-out 2s;
+    position: absolute;
+    bottom: 2%;
+    animation: boy 5s cubic-bezier(0, 0, 0.21, 0.93) infinite;   
+}
+.green{
+  justify-content: space-between;
+  margin-top: 23.5%;
+}
+.girls{
+    transition: all 7s ease-in-out 2s;
+    position: absolute;
+    bottom:0%;
+    left:33%;
+    animation: girls 5s cubic-bezier(0, 0, 0.21, 0.93) infinite;   
+
+}
+
+
+
+
+@keyframes girls{
+  100%{
+     transform: translateX(-10px);
+ }
+ 50%{
+     transform: translateX(20px);
+ }
+ 0%{
+     transform: translateX(-10px);
+ }
+}
+@keyframes boy {
+  0%{
+     
+      transform: translateX(0);
+  }
+  /* 50%{
+      
+      transform: translateX(0%);
+  } */
+  100%{
+     
+      transform: translateX(600%);
+  }
+}
+
+/* .... */
 .header-section{
+	position: absolute;
     text-align: center;
     font-size: 25px;
-    margin-top: 10%;
+    margin-top: 12%;
+		margin-left: 27%;
 }
 .header-section .p1-section{
     margin-top: 1%;
 }
 .header-section .button-section{
-    margin-left: 40%;
+    margin-left: 27%;
     text-align: center;
     margin-top: 2%;
     background-color: green;
     width: 300px;
     height: 50px;
+    border-radius: 15px;
 }
 .header-section .button-section:hover{
-    margin-left: 40%;
+  border-radius: 15px;
+    margin-left: 27%;
     background-color: rgb(100, 14, 199);
     width: 300px;
     height: 50px;
@@ -66,6 +125,7 @@ align-items: center;
 /* and of header */
 /* main */
 .main-section{
+	margin-top: -10%;
 justify-content: space-around;
 }
 .main-section .col{
@@ -75,19 +135,35 @@ justify-content: space-around;
     background-color: honeydew;
     border-radius: 10px;
     border: 1px solid green;
-    max-width: 350px;
-    max-height: 450;
-    transition: all 0.3s ease;
+    max-width: 400px;
+    max-height: 500px;
+    /* transition: all 0.3s ease; */
 
 }
-/* .main-section .col:hover{
-    background-color: rgb(159, 214, 159);
-    box-sizing: inherit;
-    transition: all 0.3s ease;
-} */
+.main-section .col:hover{
+  text-align: center;
+  margin-top: 20%;
+  /* margin-left: 10%; */
+  background-color: rgb(19, 226, 157);
+  border-radius: 10px;
+  border: 1px solid green;
+  max-width: 400px;
+  max-height: 500px;
+  /* transition: all 0.3s ease; */
 
+}
+.main-section .col img{
+  margin-bottom: 5%;
+
+}
+.main-section .col h1{
+  margin-bottom: 5%;
+  color: #2904fc;
+
+}
 .main-section .col p{
     max-width: 250px;
+    margin-bottom: 10%;
 
 }
 
@@ -192,8 +268,8 @@ justify-content: space-around;
 }
 /* .........and off */
 
-/* ...... */
-/* .................and off */
+
+
 /* >>>>>>>>ფორმა */
 .body-section{
 background-image: url("../img/svaneti.jpg");
@@ -219,10 +295,17 @@ height: 100vh;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   }
   .container .title{
+		justify-content: space-between;
     font-size: 25px;
     font-weight: 500;
     position: relative;
   }
+	.container .title a{
+		color: #f1f5f2;
+	}
+	.container .title a:hover{
+		color: #04f841;
+	}
   .container .title::before{
     content: "";
     position: absolute;
@@ -346,7 +429,70 @@ height: 100vh;
 
 /* .................... */
 .d-footer{
-    background-color: rgb(38, 241, 38);
-    height: 400px;
-    margin-top: 40px;
+	background-color: rgb(40, 46, 47);
+	height: auto;
+	margin-top: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 40px;
+	color: #fff;
+}
+.footer-content{
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content h1{
+	color: #19f804;
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+.socials li{
+	margin: 0 10px;
+}
+.socials a{
+	text-decoration: none;
+	color: #fff;
+}
+.socials a i{
+	font-size: 1.1rem;
+	transition: color .4s ease;
+
+}
+.socials a:hover i{
+	color: rgb(7, 253, 27);
+}
+
+.footer-bottom{
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.footer-bottom span{
+	color: #15ff00;
+	text-transform: uppercase;
+	/* opacity: .4; */
+	font-weight: 200;
 }
