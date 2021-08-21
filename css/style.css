@@ -7,6 +7,7 @@ body{
 }
 /* ...... */
 /* საერთო */
+/* .nav, */
 .nav-div,
 .ul-nav,
 .main-section,
@@ -16,7 +17,7 @@ body{
 .animacia .green,
 .animacia .girls {
     display: flex;
-    flex-wrap: wrap;
+    
 }
 /* >>>>> */
 
@@ -29,6 +30,7 @@ background-color:white ;
 align-items: center;
 }
 .li-nav{
+  flex-direction: column;
   font-family: "BPG Banner QuadroSquare Caps", sans-serif;
   /* border: 1px solid green; */
   width: 142px;
@@ -112,6 +114,7 @@ align-items: center;
 
 /* .header-section */
 .header-section{
+  
   font-family: "BPG Banner QuadroSquare Caps", sans-serif;
   /* font-family: "ALK Tommaso", sans-serif; */
 	position: absolute;
@@ -127,7 +130,7 @@ align-items: center;
 
 }
 .header-section .button-section{
-    margin-left: 25%;
+    /* margin-left: 25%; */
     text-align: center;
     margin-top: 5%;
     background-color: green;
@@ -138,7 +141,7 @@ align-items: center;
 }
 .header-section .button-section:hover{
   border-radius: 15px;
-    margin-left: 25%;
+    /* margin-left: 25%; */
     background-color: rgb(100, 14, 199);
     width: 300px;
     height: 50px;
@@ -156,6 +159,7 @@ align-items: center;
 
 /* main */
 .main-section{
+  flex-wrap: wrap;
 	margin-top: -10%;
 justify-content: space-around;
 }

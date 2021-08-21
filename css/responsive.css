@@ -1,10 +1,16 @@
 
 @media screen and (max-width: 1100px) {
+  .navbar-links{
+    flex-direction: column;
+  }
+  
   .ul-nav{
-    display: none;
+    position: absolute;
+    flex-direction: column;
   }
   .burger{
-    display: flex;
+    display: block;
+    position: relative;
     padding-left: 50%;
     font-size: 50px;
   }
@@ -13,6 +19,12 @@
   }
   .main-section {
   margin-top: 110%;
+  }
+  /* .navbar-links{
+    display: none;
+  } */
+  .navbar-links:active{
+    display: block;
   }
   
 }
@@ -23,8 +35,8 @@
   .header-section{
     margin-right: 10%;
   }
-.button-section {
+/* .button-section {
  
-  }
+  } */
 }
   
