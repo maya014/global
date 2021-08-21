@@ -1,3 +1,30 @@
 
+@media screen and (max-width: 1100px) {
+  .ul-nav{
+    display: none;
+  }
+  .burger{
+    display: flex;
+    padding-left: 50%;
+    font-size: 50px;
+  }
+  .animacia{
+    display: none;
+  }
+  .main-section {
+  margin-top: 110%;
+  }
+  
+}
 
+
+
+@media screen and (max-width: 600px) {
+  .header-section{
+    margin-right: 10%;
+  }
+.button-section {
+ 
+  }
+}
   
