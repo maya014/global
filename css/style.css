@@ -18,6 +18,9 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+/* >>>>> */
+
+
 
 /* header */
 .nav-div{
@@ -26,21 +29,37 @@ background-color:white ;
 align-items: center;
 }
 .li-nav{
+  font-family: "BPG Banner QuadroSquare Caps", sans-serif;
+  /* border: 1px solid green; */
+  width: 142px;
+    height: 40px;
     font-size: 20px;
-    margin-left: 30px;
-    padding-left: 30px;
+    margin-left: 4px;
+    text-align: center;
+    /* padding-left: 1px; */
 }
 .li-nav a{
     text-align: center;
 }
 .li-nav:hover{
+  font-family: "BPG Banner QuadroSquare Caps", sans-serif;
     text-align: center;
     font-size: 20px;
-    background-color: green;
-    width: 100px;
+    background-color: rgb(19, 226, 157);
+    /* border: 1px solid green; */
+    width: 142px;
     height: 40px;
 }
-/* .... */
+
+.burger{
+  display: none;
+}
+/* ....and off */
+
+
+
+
+
 /* animacia */
 .boy{
   transition: all 7s ease-in-out 2s;
@@ -60,9 +79,6 @@ align-items: center;
     animation: girls 5s cubic-bezier(0, 0, 0.21, 0.93) infinite;   
 
 }
-
-
-
 
 @keyframes girls{
   100%{
@@ -91,31 +107,42 @@ align-items: center;
 }
 
 /* .... */
+
+
+
+/* .header-section */
 .header-section{
+  font-family: "BPG Banner QuadroSquare Caps", sans-serif;
+  /* font-family: "ALK Tommaso", sans-serif; */
 	position: absolute;
     text-align: center;
     font-size: 25px;
-    margin-top: 12%;
-		margin-left: 27%;
+    /* margin-top: 5%; */
+		margin-left: 25%;
 }
 .header-section .p1-section{
-    margin-top: 1%;
+    margin-top: 5%;
+    letter-spacing: 1px;
+   
+
 }
 .header-section .button-section{
-    margin-left: 27%;
+    margin-left: 25%;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 5%;
     background-color: green;
     width: 300px;
     height: 50px;
     border-radius: 15px;
+    font-family: "BPG Banner QuadroSquare Caps", sans-serif;
 }
 .header-section .button-section:hover{
   border-radius: 15px;
-    margin-left: 27%;
+    margin-left: 25%;
     background-color: rgb(100, 14, 199);
     width: 300px;
     height: 50px;
+    font-family: "BPG Banner QuadroSquare Caps", sans-serif;
     
 }
 .header-section .button-section a{
@@ -123,6 +150,10 @@ align-items: center;
 }
 
 /* and of header */
+
+
+
+
 /* main */
 .main-section{
 	margin-top: -10%;
@@ -137,7 +168,6 @@ justify-content: space-around;
     border: 1px solid green;
     max-width: 400px;
     max-height: 500px;
-    /* transition: all 0.3s ease; */
 
 }
 .main-section .col:hover{
@@ -157,17 +187,23 @@ justify-content: space-around;
 
 }
 .main-section .col h1{
+  font-family: "ALK Tommaso", sans-serif;
   margin-bottom: 5%;
-  color: #2904fc;
+  letter-spacing: 2px;
+  color: #fc0404;
 
 }
 .main-section .col p{
     max-width: 250px;
     margin-bottom: 10%;
+    font-family: "BPG Banner QuadroSquare Caps", sans-serif;
 
 }
 
+/* project */
 .project-title{
+  font-family: "BPG DedaEna Block", sans-serif;
+  letter-spacing: 5px;
     text-align: center;
     font-size: 45px;
     /* margin-top: 15%; */
@@ -200,7 +236,7 @@ justify-content: space-around;
     width: 500px;
     height: 500px;
     transform: translate(-140%, -50%);
-    background-color: rgba(54, 216, 116, 0.8);
+    background-color: rgba(4, 243, 96, 0.8);
     border-radius: 50%;
     transition: .8s;
 }
@@ -219,6 +255,9 @@ justify-content: space-around;
     /* object-fit: contain; */
 }
 .project-section .col .one-col{
+  color: #080404;
+  font-family: "ALK Tommaso", sans-serif;
+  letter-spacing: 2px;
     text-align: center;
     font-size: 20px;
     width: 350px;
@@ -227,7 +266,7 @@ justify-content: space-around;
     top: 50%;
     left: 50%;
     transform: translate(-2000px, -50%);
-    color: #fff;
+    /* color: #fff; */
     transition: .8s;
     transition-timing-function: ease-in;
 }
@@ -236,11 +275,13 @@ justify-content: space-around;
     transition-timing-function: ease;
 
 }
+/* and off */
 
 
-
-/* ............ */
+/* person */
 .person-section-title{
+  font-family: "BPG DedaEna Block", sans-serif;
+  letter-spacing: 3px;
     text-align: center;
     font-size: 45px;
     margin: 25px;
@@ -251,7 +292,7 @@ justify-content: space-around;
 }
 .ul-users {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -286,6 +327,7 @@ height: 100vh;
 
 }
 .body-section .container{
+  
 	color: rgb(248, 248, 248);
     max-width: 700px;
     width: 100%;
@@ -295,6 +337,7 @@ height: 100vh;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   }
   .container .title{
+    font-family: "ALK Tommaso", sans-serif;
 		justify-content: space-between;
     font-size: 25px;
     font-weight: 500;
@@ -394,9 +437,11 @@ height: 100vh;
      letter-spacing: 1px;
      cursor: pointer;
      transition: all 0.3s ease;
+     font-family: "ALK Tommaso", sans-serif;
      background: linear-gradient(135deg, #262e24, #19f804);
    }
    form .button input:hover{
+    font-family: "ALK Tommaso", sans-serif;
     /* transform: scale(0.99); */
     background: linear-gradient(-135deg, #1d221d, #67fc04);
     }
@@ -418,6 +463,11 @@ height: 100vh;
     .user-details::-webkit-scrollbar{
       width: 5px;
     }
+    }
+    @media(max-width: 459px){
+      .container .content .category{
+        flex-direction: column;
+      }
     }
    
   
