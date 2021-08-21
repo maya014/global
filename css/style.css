@@ -55,6 +55,7 @@ align-items: center;
 
 .burger{
   display: none;
+  
 }
 /* ....and off */
 
@@ -120,7 +121,7 @@ align-items: center;
 	position: absolute;
     text-align: center;
     font-size: 25px;
-    /* margin-top: 5%; */
+    
 		margin-left: 25%;
 }
 .header-section .p1-section{
@@ -130,25 +131,22 @@ align-items: center;
 
 }
 .header-section .button-section{
-    /* margin-left: 25%; */
-    text-align: center;
-    margin-top: 5%;
+    /* text-align: center; */
+    margin-top: 10%;
     background-color: green;
-    width: 300px;
-    height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: "BPG Banner QuadroSquare Caps", sans-serif;
 }
 .header-section .button-section:hover{
-  border-radius: 15px;
+  border-radius: 10px;
     /* margin-left: 25%; */
     background-color: rgb(100, 14, 199);
-    width: 300px;
-    height: 50px;
+    /* width: 400px;
+    height: 100px; */
     font-family: "BPG Banner QuadroSquare Caps", sans-serif;
     
 }
-.header-section .button-section a{
+.header-section .button-section{
     color: white;
 }
 

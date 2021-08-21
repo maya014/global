@@ -68,12 +68,9 @@ getUsers(currentPage);
 
 // .NAVNAR
 
-let navbarlinks = document.getElementById('navbarlinks');
+let navbarLinks = document.getElementById('navbarLinks');
+let togglenutton = document.getElementById('toggleButton');
 
-let togglebutton = document.getElementById('togglebutton');
-
-togglebutton.addEventListener('click', function()
-{
-    navbarlinks.classList.toggle('active')
+toggleButton.addEventListener('click', function() {
+    navbarLinks.classList.toggle('active');
 })
-

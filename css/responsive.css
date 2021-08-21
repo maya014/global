@@ -1,16 +1,19 @@
 
 @media screen and (max-width: 1100px) {
-  .navbar-links{
+  /* .navbar-links, */
+  /* .nav-div{
     flex-direction: column;
-  }
+  } */
   
   .ul-nav{
+  flex-direction: column;
     position: absolute;
-    flex-direction: column;
-  }
+  top: 60px;
+  right: 0;
+  background-color: chartreuse;
+}
   .burger{
     display: block;
-    position: relative;
     padding-left: 50%;
     font-size: 50px;
   }
@@ -20,9 +23,9 @@
   .main-section {
   margin-top: 110%;
   }
-  /* .navbar-links{
+  .navbar-links{
     display: none;
-  } */
+  }
   .navbar-links:active{
     display: block;
   }
@@ -35,8 +38,6 @@
   .header-section{
     margin-right: 10%;
   }
-/* .button-section {
- 
-  } */
+
 }
   
